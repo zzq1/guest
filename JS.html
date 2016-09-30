@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+<head>
+	<title>js应用</title>
+	<meta charset="utf-8" /> 
+	<style type="text/css">
+		*{
+			margin:0px;
+			padding:0px;
+		}
+		body{
+			font-family:"Microsoft yahei";
+		}
+		#form{
+			width:450px;
+			height:350px;
+			margin:75px auto;
+			border:1px solid #e20076;
+		}
+		h3{
+			text-align:center;
+			padding-bottom:10px;
+		}
+		input.com{
+			/*border:1px solid #ccc;*/
+			width:85%;
+		}
+		input.set{
+			width:60px;
+			height:25px;
+			border:0px;
+			border-radius:5px;
+			color:#fff;
+			background:rgba( 0,0,0,0.35 );
+			font-size:14px;
+			text-align:center;
+			line-height:25px;
+			margin:5px 81px;
+		}
+		p{
+			margin:5px 0px;
+		}
+	</style>
+	
+</head>
+<body>
+	<!-- 表单开始 -->
+	<form id="form" action="" method="get">
+		<h3>表单提交实例</h3>
+		<p>
+			<label for="name">姓名：</label>
+			<input id="name" class="com" type="text" name="name" placeholder="请输入用户名" />
+		</p>
+		<p>
+			<label for="pwd">密码：</label>
+			<input id="pwd" class="com" type="password" name="pwd" placeholder="请输入密码" />
+		</p>
+		<input id="submit" class="set" type="submit" value="提交" />
+		<input id="reset" class="set" type="reset" value="重置" />
+	</form>
+	<!-- 表单结束 -->
+
+	<!-- 表单内容 -->
+	<div id="con" style="display:none;">
+		
+	</div>
+	<!-- 表单内容 -->
+
+	<script>
+		window.onload = function(){
+			//alert( "123456789" );
+			var oSubmit = document.getElementById( "submit" );
+			var oReset = document.getElementById( "reset" );
+			var oName = document.getElementById( "name" );
+			var oPwd = document.getElementById( "pwd" );
+			var oCon = document.getElementById( "con" );
+			//提交
+			oSubmit.onclick = function(){
+				//alert( "1234567" );
+				var oName_value = oName.value;
+				var oPwd_value = oPwd.value;
+
+				oCon.innerHTML = "表单数据的获取" + "用户名："+oName.value + "密码："+ oPwd.value;
+				if( oName_value == "" || oPwd_value == "" ){
+					alert( "请输入用户名和密码！！！" );
+				}else{
+					alert( oCon.innerHTML );
+				}
+				return false;
+			}
+			//重置
+			oReset.onclick = function(){
+				var oName_value = oName.value;
+				var oPwd_value = oPwd.value;
+
+				oName_value = "";
+				oPwd_value = "";
+			}
+		}
+	</script>
+</body>
+</html>

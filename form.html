@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>第十八届中国国际广告节会议注册表</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		*{
+			margin:0;
+			padding:0;
+		}
+		body{
+			text-align:center;
+		}
+		h1{
+			font-size:14px;
+			/* text-align:center; */
+		}
+		input.reg{
+			width:100%;
+			height:100%;
+		}
+		#con{
+			width:750px;
+			height:450px;
+			border:1px solid #e20076;
+			margin:0px auto; 
+		}
+		.zhuce{
+			font-size:14px;
+			/*width:840px;*/
+		}
+		.zhuce.td{
+			/*border:1px solid #ccc;*/
+			/* text-align:center; */
+		}
+		.zhuce.i{
+			text-align:left;
+		}
+		.zhuce.j{
+			font-size:13px;
+		}
+	</style>
+</head>
+<body>
+	<h1>第十八届中国国际广告节会议注册表</h1>
+	<div id="con">
+		<table class="zhuce" border="1" cellspacing="3">
+		<tr>
+			<td width="100px">参会者姓名</td>
+			<td colspan="4" class="i">
+				<input class="reg" type="text" name="textName" />
+			</td>
+			<td>职务</td>
+			<td colspan="3" class="i">
+				<input class="reg" type="text" name="textName" / >
+			</td>
+		</tr>
+		<tr>
+			<td>工作单位</td>
+			<td colspan="8" class="i">
+				<input  class="reg" type="text" name="textName" />
+			</td>
+		</tr>
+		<tr>
+			<td>电话</td>
+			<td colspan="2" class="i">
+				<input class="reg" type="txt" name="textTel" />
+			</td>
+			<td>传真</td>
+			<td class="i">
+				<input class="reg" type="text" name="textFax" />
+			</td>
+			<td>手机</td>
+			<td class="i" colspan="3">
+				<input class="reg" type="text" name="textMob" />
+			</td>
+		</tr>
+		<tr>
+			<td>通讯地址</td>
+			<td colspan="6" class="i">
+				<input class="reg" type="text" name="textAddress" />
+			</td>
+			<td>邮编</td>
+			<td class="i" colspan="0">
+				<input class="reg" type="text" name="textPostCode" />
+			</td>
+		</tr>
+		<tr>
+			<td>E-mail</td>
+			<td colspan="6" class="i">
+				<input class="reg" type="text" name="textE-mail" />
+			</td>
+			<td>国家</td>
+			<!-- <td class="i"></td> -->
+			<td>
+				<select style="float:left;width:100%;" name="country" id="country">
+					<option value="中国" selected="slected">中国</option>
+					<option value="欧洲-英国">欧洲-英国<南/option>
+					<option value="南美洲-巴西">美洲=巴西</option>
+					<option value="美国">美国</option>
+					<option value="非洲-南非">非洲-南非</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td>省份</td>
+			<td colspan="6" class="i">
+				<select name="province" style="float:left;width:100%;">
+					<option selected="slected" value="北京市">北京市</option>
+					<option value="上海市">上海市</option>
+					<option value="天津市">天津市</option>
+					<option value="重庆市">重庆市</option>
+				</select>
+			</td>
+			<td>城市</td>
+			<td class="i">
+				<input class="reg" type="text" name="textCity" />
+			</td>
+		</tr>
+		<tr>
+			<td colspan="9"><p align="center">会议费标准(人民币)</p></td>
+		</tr>
+		<tr>
+			<td colspan="2">身份/时间</td>
+			<td colspan="4">2011年9月20日之前注册</td>
+			<td colspan="3">2011年9月20日之后注册</td>
+		</tr>
+		<tr>
+			<td colspan="2">中广协会</td>
+			<td colspan="4" align="center">
+				<input type="radio" name="rb" value="rb" checked="" />
+				<span>1500yuan</span>
+			</td>
+			<td colspan="3" align="center">
+				<input type="radio" name="rb" value="rb" checked="" />
+				<span>2000yuan</span>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2">非会员</td>
+			<td colspan="4" align="center">
+				<input type="radio" name="rb" value="rb" checked="checked" />
+				<span>1000yuan</span>
+			</td>
+			<td colspan="3" align="center">
+				<input type="radio" name="rb" value="rb" />
+				<span>2000yuan</span>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="9" class="j" align="center">
+				<input type="submit" name="tijiao" value="提交" />
+				<a href="Javascript:void(0)">第十八届中国国际广告节注册表下载</a>
+			</td>
+		</tr>
+	</table>
+	</div>
+</body>
+</html>
